@@ -1,7 +1,5 @@
 import React, {useState} from 'react'; 
 
-//counter
-import CountUp from 'react-countup';
 
 // icons
 import {
@@ -17,7 +15,7 @@ import {
 
 import {
   SiNextdotjs,
-  SiFramer,
+  
   SiAdobexd,
   SiAdobephotoshop,
   SiCarrd,
@@ -40,24 +38,24 @@ const aboutData = [
       {
         title: 'Web Development',
         icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaPhp />,
-          <SiMysql />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <FaWordpress />,
-          <SiCarrd />,
+          <FaHtml5 key={1}/>,
+          <FaCss3 key={2}/>,
+          <FaJs key={3}/>,
+          <FaPhp key={4}/>,
+          <SiMysql key={5}/>,
+          <FaReact key={6}/>,
+          <SiNextdotjs key={7}/>,
+          <FaWordpress key={8}/>,
+          <SiCarrd key={9}/>,
           
         ],
       },
       {
         title: 'Mobile Development',
         icons: [
-          <SiFlutter />,
-          <SiDart/>,
-          <SiAndroidstudio/>,
+          <SiFlutter key={1}/>,
+          <SiDart key={2}/>,
+          <SiAndroidstudio key={3}/>,
           
           
         ],
@@ -66,16 +64,17 @@ const aboutData = [
       
       {
         title: 'UI/UX Design',
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />, <SiAdobeillustrator />],
+        icons: [<FaFigma key={1}/>, <SiAdobexd key={2}/>, <SiAdobephotoshop key={3}/>, <SiAdobeillustrator key={4}/>],
       },
 
       {
+        
         title: 'Programming Languages',
         icons: [
-          <SiPython />,
-          <SiCsharp />,
-          <SiCplusplus/>,
-          <SiVisualbasic />,
+          <SiPython key={1}/>,
+          <SiCsharp key={2}/>,
+          <SiCplusplus key={3}/>,
+          <SiVisualbasic key={4}/>,
         ],
       },
     ],
@@ -129,7 +128,7 @@ import Circles from "../../components/Circles";
 //framer motion
 import {motion} from 'framer-motion'
 import { fadeIn } from '../../variants';
-import { icons } from 'react-icons';
+
 
 const About = () => {
   const [index, setIndex] = useState(0);
@@ -188,7 +187,7 @@ const About = () => {
                   {/* icons */}
                   {item.icons ?.map((icon, itemIndex) => {
                     return (
-                      <div className='text-2xl'>{icon}</div>
+                      <div key={itemIndex} className='text-2xl'>{icon}</div>
                       
                     );
                   })}
