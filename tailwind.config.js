@@ -15,7 +15,7 @@ module.exports = {
       },
     },
     screens: {
-      sm: '640px',
+      sm: '540px',
       md: '768px',
       lg: '960px',
       xl: '1200px',
@@ -39,6 +39,10 @@ module.exports = {
         poppins: [`var(--font-poppins)`, 'sans-serif'],
         sora: [`var(--font-sora)`, 'sans-serif'],
       },
+      fontSize: {
+          'body-lg': '1rem',
+          'body': '.875rem',
+        }
     },
   },
   container: {

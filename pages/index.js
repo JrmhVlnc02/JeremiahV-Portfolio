@@ -25,16 +25,16 @@ const Home = () => {
         
         {/* title */}
         
-        <motion.h3 variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-0">
+        <motion.h3 variants={fadeIn('down', 0.2)} initial="hidden" animate="show" exit="hidden" className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-0 xl:mb-0 xl:text-3xl lg:text-3xl md:text-2xl sm:text-xl mt-10">
         Hello, my name is
         </motion.h3>
 
-        <motion.h1 variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden" className="h1">
+        <motion.h1 variants={fadeIn('down', 0.4)} initial="hidden" animate="show" exit="hidden" className="h1 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-0 xl:mb-0 xl:text-6xl lg:text-6xl md:text-4xl">
         <span className="text-accent"> Jeremiah</span>!
         
         </motion.h1>
 
-        <motion.h3 variants={fadeIn('down', 0.6)} initial="hidden" animate="show" exit="hidden" className="h4 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16">
+        <motion.h3 variants={fadeIn('down', 0.6)} initial="hidden" animate="show" exit="hidden" className="h3 max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:text-2xl lg:text-2xl md:text-1xl sm:text-xl">
         I build websites, develop web and mobile applications, and do graphic design.
         </motion.h3>
 

@@ -150,15 +150,15 @@ const About = () => {
       </motion.div>
       <div className='container mx-auto mt-10 h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
-          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h2'>About<span className='text-accent'>.</span>
+          <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h1 mb-1'>About<span className='text-accent'>.</span>
           </motion.h2>
-          <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0'>
+          <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='h4 max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0'>
           Hey, my name is Jeremiah Valencia. I’m a UX/UI designer and front-end web and mobile developer from the Philippines. My expertise in coding, problem-solving, and staying up-to-date with the latest industry trends makes me a valuable asset.
           </motion.p>
           
         </div>
         <motion.div variants={fadeIn('left', 0.8)} initial='hidden' animate='show' exit='hidden' className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
-          <div className='flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4'>
+          <div className='h4x flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-1'>
 
             {aboutData.map((item, itemIndex) =>{
               return (
@@ -180,14 +180,14 @@ const About = () => {
               return (
                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
                 {/* title */}
-                  <div className='font-light mb-2 md-mb-0'>{item.title}</div>  
+                  <div className='h5 xl:text-xl font-light mb-1 md:mb-0'>{item.title}</div>  
                   <div className='hidden md:flex'>-</div>
-                  <div>{item.stage}</div>
+                  <div className='h5 xl:text-xl mb-0'>{item.stage}</div>
                   <div className='flex gap-x-4'>
                   {/* icons */}
                   {item.icons ?.map((icon, itemIndex) => {
                     return (
-                      <div key={itemIndex} className='text-2xl'>{icon}</div>
+                      <div key={itemIndex} className='h4'>{icon}</div>
                       
                     );
                   })}
