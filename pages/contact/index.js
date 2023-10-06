@@ -34,7 +34,7 @@ const Contact = () => {
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
-          <h2 className="h1 text-center mb-2 mt-16">
+          <h2 className="h1 text-center mb-2 mt-8">
             Let&apos;s <span className="text-accent">connect.</span>
           </h2>
 
