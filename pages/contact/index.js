@@ -10,6 +10,7 @@ import {motion} from 'framer-motion'
 //variants
 import { fadeIn } from "../../variants";
 
+import ParticlesContainer from '../../components/ParticlesContainer';
 
 const Contact = () => {
 
@@ -31,13 +32,16 @@ const Contact = () => {
   return (
 
     <div className="h-full bg-primary/30 ">
+    
       <div className="container mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
         <div className="flex flex-col w-full max-w-[700px]">
           {/* text */}
+          {/* particles */}
+            <ParticlesContainer/> 
           <h2 className="h1 text-center mb-2 mt-2">
             Let&apos;s <span className="text-accent">connect.</span>
           </h2>
-
+          
           {/* form */}
           <form className="flex-1 flex flex-col gap-2 w-full mx-auto" action="https://formsubmit.co/c84533b2a88751d9764d44576b2419aa" method="POST" >
           {/* input group */}

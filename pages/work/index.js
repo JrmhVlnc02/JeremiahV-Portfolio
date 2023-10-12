@@ -5,6 +5,8 @@ import WorkSlider from '../../components/WorkSlider';
 import Bulb from '../../components/Bulb';
 import Circles from '../../components/Circles';
 
+import ParticlesContainer from '../../components/ParticlesContainer';
+
 //framer motion
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../variants';
@@ -26,6 +28,8 @@ const Work = () => {
           </div>
         
         <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className='w-full xl:max-w-[65%]'>
+        {/* particles */}
+            <ParticlesContainer/> 
         {/* slider */}
         <WorkSlider/>
         

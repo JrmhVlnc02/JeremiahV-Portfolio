@@ -1,6 +1,8 @@
 import React, {useState} from 'react'; 
 
 
+import ParticlesContainer from '../../components/ParticlesContainer';
+
 // icons
 import {
   FaHtml5,
@@ -146,10 +148,12 @@ const About = () => {
       className='hidden xl:flex absolute bottom-0 -left-[370px]'>
 
         <Avatar />
+        
       
       </motion.div>
       <div className='container mx-auto mt-10 h-full flex flex-col items-center xl:flex-row gap-x-6'>
         <div className='flex-1 flex flex-col justify-center'>
+        
           <motion.h2 variants={fadeIn('right', 0.2)} initial='hidden' animate='show' exit='hidden' className='h1 mb-1'>About<span className='text-accent'>.</span>
           </motion.h2>
           <motion.p variants={fadeIn('right', 0.4)} initial='hidden' animate='show' exit='hidden' className='h4 max-w-[500px] mx-auto xl:mx-0 mb-2 xl:mb-12 px-2 xl:px-0'>
@@ -157,6 +161,7 @@ const About = () => {
           </motion.p>
           
         </div>
+        
         <motion.div variants={fadeIn('left', 0.8)} initial='hidden' animate='show' exit='hidden' className='flex flex-col w-full xl:max-w-[48%] h-[480px]'>
           <div className='h4x flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-1'>
 
@@ -175,7 +180,11 @@ const About = () => {
               );
           })}
           </div>
+          
+          
           <div className='py-2 xl:py-6 flex flex-col gap-y-2 xl:gap-y-4 items-center xl:items-start'>
+            {/* particles */}
+            <ParticlesContainer/> 
             {aboutData[index].info.map((item, itemIndex) =>{
               return (
                 <div key={itemIndex} className='flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60'>
@@ -199,6 +208,7 @@ const About = () => {
           </div>
         </motion.div>
       </div>
+      
     </div> 
   );
 };

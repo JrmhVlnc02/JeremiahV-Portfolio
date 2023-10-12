@@ -9,6 +9,9 @@ import Circles from '../../components/Circles';
 import {motion} from 'framer-motion';
 import { fadeIn } from '../../variants';
 
+
+import ParticlesContainer from '../../components/ParticlesContainer';
+
 const Services = () => {
   return (
   <div className='h-full bg-primary/30 py-36 flex items-center'>
@@ -26,6 +29,8 @@ const Services = () => {
           </div>
         
         <motion.div variants={fadeIn('down', 0.6)} initial='hidden' animate='show' exit='hidden' className='w-full xl:max-w-[65%]'>
+        {/* particles */}
+        <ParticlesContainer/> 
         {/* slider */}
         <ServiceSlider/>
         
