@@ -105,10 +105,13 @@ const WorkSlider = () => {
   return (
     <Swiper
 
+
+
     spaceBetween={10}   
     pagination={{
       clickable: true
     }}
+    loop
     modules={[ Pagination]}
     className='h-full sm:h-full' 
     >
